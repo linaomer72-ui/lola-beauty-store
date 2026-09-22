@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lola Beauty</title>
+<meta name="description" content="Lola Beauty - مستحضرات تجميل وعناية بالبشرة والشعر والشفاه">
+<link rel="icon" href="assets/lola-logo.jpg">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<header class="topbar"><div class="wrap nav">
+  <a class="brand" href="#"><img id="logo" src="assets/lola-logo.jpg"><span><b>Lola Beauty</b><small>Lip Gloss & Beauty</small></span></a>
+  <nav><a href="#products">المنتجات</a><a href="#about">عن Lola</a><a href="#contact">تواصل معنا</a><button id="cartBtn" class="cart">🛍️ السلة <span id="cartCount">0</span></button></nav>
+</div></header>
+<main>
+<section class="hero wrap"><div><span class="pill">Lola Beauty ✨</span><h1>جمالك يبدأ من هنا</h1><p>منتجات مختارة للعناية بالبشرة والشعر والشفاه، مع طلب سهل عبر واتساب.</p><a class="btn" href="#products">تسوقي الآن</a></div><div class="hero-card"><img src="assets/lola-logo.jpg" alt="Lola Beauty"></div></section>
+<section id="products" class="wrap section"><div class="section-head"><div><span class="eyebrow">SHOP</span><h2>منتجاتنا</h2></div><select id="categoryFilter"><option value="all">كل المنتجات</option><option value="skin">العناية بالبشرة</option><option value="hair">العناية بالشعر</option><option value="lips">الشفاه</option></select></div><div id="productsGrid" class="grid"><div class="loading">جاري تحميل المنتجات…</div></div></section>
+<section id="about" class="wrap info"><div><span class="eyebrow">LOLA BEAUTY</span><h2>عناية وجمال بلمسة أنثوية</h2><p>متجر Lola Beauty للمنتجات التجميلية والعناية بالبشرة والشعر والشفاه.</p></div><div class="info-box"><b>التوصيل</b><p id="delivery">مصر والسودان</p><b>الدفع</b><p id="payment">المحفظة الإلكترونية</p></div></section>
+<section id="contact" class="wrap contact"><h2>اطلبي بسهولة 💗</h2><p>أضيفي المنتجات إلى السلة ثم أرسلي طلبك عبر واتساب.</p><a id="whatsappLink" class="btn" target="_blank">واتساب</a></section>
+</main>
+<div id="cartModal" class="modal hidden"><div class="modal-card"><button class="close" id="closeCart">×</button><h2>سلة المشتريات</h2><div id="cartItems"></div><div class="total">الإجمالي: <b id="cartTotal">0</b> جنيه</div><div class="form"><input id="customerName" placeholder="الاسم"><input id="customerPhone" placeholder="رقم الهاتف"><textarea id="customerNote" placeholder="ملاحظات (اختياري)"></textarea><button id="sendOrder" class="btn">إرسال الطلب عبر واتساب</button></div></div></div>
+<footer><div class="wrap">© <span id="year"></span> Lola Beauty</div></footer>
+<script src="app.js"></script>
+</body></html>
